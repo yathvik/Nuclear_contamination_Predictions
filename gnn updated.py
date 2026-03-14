@@ -26,7 +26,7 @@ warnings.filterwarnings("ignore")
 # -------------------------
 # Settings
 # -------------------------
-working_dir = r'C:\Users\ujjwa\Nuclear_contamination_Predictions'   # change if needed
+working_dir = os.getcwd()   # change if needed
 os.chdir(working_dir)
 print("Working dir:", os.getcwd())
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
