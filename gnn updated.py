@@ -26,10 +26,11 @@ warnings.filterwarnings("ignore")
 # -------------------------
 # Settings
 # -------------------------
-working_dir = os.getcwd()   # change if needed
-os.chdir(working_dir)
-print("Working dir:", os.getcwd())
+working_dir = os.getcwd()  # Optional: for logging only
+print("Working dir:", working_dir)
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+# No os.chdir needed
+
 
 # Files expected
 required_files = ['X_train.csv', 'X_test.csv', 'y_train.csv', 'y_test.csv']
